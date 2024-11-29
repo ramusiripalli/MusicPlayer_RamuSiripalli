@@ -1,3 +1,4 @@
+import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react"
 import { Button } from "./components/ui/button"
 
 function App() {
@@ -5,8 +6,16 @@ function App() {
 
   return (
   <>
-  <div><h1 className="text-red-500 text-5xl">Hello</h1></div>
-  <Button variant={"destructive"}>This is a Button </Button>
+ <header>
+      <SignedOut>
+        <SignInButton>
+          <Button>Sign In</Button> 
+          </SignInButton>
+      </SignedOut>
+      <SignedIn>
+        <UserButton />
+      </SignedIn>
+    </header>
   </>
   )
 }
