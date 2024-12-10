@@ -16,6 +16,7 @@ function App() {
         <UserButton />
       </SignedIn>
     </header>
+    <div className="text-5xl text-red-500">Hi</div>
   </>
   )
 }
