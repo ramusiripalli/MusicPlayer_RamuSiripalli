@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom"
-import HomePage from "./pages/home/HomePage"
-import AuthCallBackPage from "./pages/auth-callback/AuthCallBackPage"
+import HomePage from "./pages/home/HomePage.tsx"
+import AuthCallBackPage from "./pages/auth-callback/AuthCallBackPage.tsx"
 
 
 function App() {
