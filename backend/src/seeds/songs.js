@@ -20,8 +20,8 @@ const songs = [
 		duration: 41, // 0:41
 	},
 	{
-		title: "Lost in Tokyo",
-		artist: "Electric Dreams",
+		title: "Pushpa pushpa",
+		artist: "Devi Sri Prasad",
 		imageUrl: "/cover-images/3.jpg",
 		audioUrl: "/songs/3.mp3",
 		duration: 24, // 0:24
