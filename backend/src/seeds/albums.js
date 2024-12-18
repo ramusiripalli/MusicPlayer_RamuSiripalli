@@ -16,31 +16,31 @@ const seedDatabase = async () => {
 		// First, create all songs
 		const createdSongs = await Song.insertMany([
 			{
-				title: "City Rain",
-				artist: "Urban Echo",
+				title: "Hey Rangule",
+				artist: "Ramya ,Anurag",
 				imageUrl: "/cover-images/7.jpg",
 				audioUrl: "/songs/7.mp3",
 				plays: Math.floor(Math.random() * 5000),
-				duration: 39, // 0:39
+				duration: 227, // 0:39
 			},
 			{
-				title: "Neon Lights",
-				artist: "Night Runners",
+				title: "Kissik",
+				artist: "Sublahshini",
 				imageUrl: "/cover-images/5.jpg",
 				audioUrl: "/songs/5.mp3",
 				plays: Math.floor(Math.random() * 5000),
-				duration: 36, // 0:36
+				duration: 200, // 0:36
 			},
 			{
-				title: "Urban Jungle",
-				artist: "City Lights",
+				title: "Fear Song Devara",
+				artist: "Anirudh Ravichandran",
 				imageUrl: "/cover-images/15.jpg",
 				audioUrl: "/songs/15.mp3",
 				plays: Math.floor(Math.random() * 5000),
-				duration: 36, // 0:36
+				duration: 196, // 0:36
 			},
 			{
-				title: "Neon Dreams",
+				title: "chutumalle Song",
 				artist: "Cyber Pulse",
 				imageUrl: "/cover-images/13.jpg",
 				audioUrl: "/songs/13.mp3",
@@ -48,28 +48,28 @@ const seedDatabase = async () => {
 				duration: 39, // 0:39
 			},
 			{
-				title: "Summer Daze",
-				artist: "Coastal Kids",
+				title: "Naanaa Hyraanaa game Changer",
+				artist: "Shreya ghosal",
 				imageUrl: "/cover-images/4.jpg",
 				audioUrl: "/songs/4.mp3",
 				plays: Math.floor(Math.random() * 5000),
-				duration: 24, // 0:24
+				duration: 268, // 0:24
 			},
 			{
-				title: "Ocean Waves",
-				artist: "Coastal Drift",
+				title: "OO kiku ekeley Narashima",
+				artist: "Mano, Fabi",
 				imageUrl: "/cover-images/9.jpg",
 				audioUrl: "/songs/9.mp3",
 				plays: Math.floor(Math.random() * 5000),
-				duration: 28, // 0:28
+				duration: 320, // 0:28
 			},
 			{
-				title: "Crystal Rain",
-				artist: "Echo Valley",
+				title: "Snehithudaaa",
+				artist: "Sadhana, Srinivas",
 				imageUrl: "/cover-images/16.jpg",
 				audioUrl: "/songs/16.mp3",
 				plays: Math.floor(Math.random() * 5000),
-				duration: 39, // 0:39
+				duration: 190, // 0:39
 			},
 			{
 				title: "Starlight",
@@ -104,12 +104,12 @@ const seedDatabase = async () => {
 				duration: 27, // 0:27
 			},
 			{
-				title: "Lost in Tokyo",
-				artist: "Electric Dreams",
+				title: "Pushpa Pushpa",
+				artist: "Devi Sri Prasad",
 				imageUrl: "/cover-images/3.jpg",
 				audioUrl: "/songs/3.mp3",
 				plays: Math.floor(Math.random() * 5000),
-				duration: 24, // 0:24
+				duration: 197, // 0:24
 			},
 			{
 				title: "Neon Tokyo",
