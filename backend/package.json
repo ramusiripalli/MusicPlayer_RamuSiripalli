@@ -2,13 +2,11 @@
   "name": "backend",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
-		"start": "npm start --prefix backend",
-    "dev": "nodemon src/index.js",
-    "seed:songs": "node src/seeds/songs.js",
-    "seed:albums": "node src/seeds/albums.js"
-  },
+ "scripts": {
+		"build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+		"start": "npm start --prefix backend"
+	},
+
   "keywords": [],
   "type": "module",
   "author": "",
