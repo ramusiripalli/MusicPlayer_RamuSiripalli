@@ -18,10 +18,10 @@ fetchAlbums();
 console.log({albums});
   return (
     <div className="h-full flex flex-col gap-2">        
-      <div className="rounded-lg bg-red-800 p-4">
+      <div className="rounded-lg bg-zinc-900 p-4">
             <div className="space-y-2 ">
                 <Link to={'/'} className={cn(buttonVariants({
-                    variant:"ghost", className:"w-full justify-start text-white hover:bg-violet-600"
+                    variant:"ghost", className:"w-full justify-start text-white hover:bg-zinc-800"
                 }))}>
                 <HomeIcon className="mr-2 size-5" /><span className="hidden md:inline">Home</span>
                 </Link>
@@ -35,14 +35,14 @@ console.log({albums});
             </div>
         </div>
       
-        <div className="flex-1 rounded-lg bg-green-600 p-4">
+        <div className="flex-1 rounded-lg bg-zinc-900 p-4">
             <div className="flex items-center justify-between mb-4"> 
                 <div className="flex items-center text-white px-2">
                     <Library className="mr-2 size-5" />
                     <span className="hidden md:inline">Playlists</span>
                 </div>
             </div>
-            <ScrollArea className="h-[calc(100vh-300px)]">
+            <ScrollArea className="h-[calc(100vh-100px)]">
                 <div className="space-y-2">
                     {isLoading ? (
                         <PlaylistSkeleton />
@@ -61,7 +61,7 @@ console.log({albums});
 
                                 <div className='flex-1 min-w-0 hidden md:block'>
                                     <p className='font-medium truncate'>{album.title}</p>
-                                    <p className='text-sm text-violet-400 truncate'>Album • {album.artist}</p>
+                                    <p className='text-sm text-zinc-400 truncate'>Album • {album.artist}</p>
                                 </div>
                             </Link>
                         ))
