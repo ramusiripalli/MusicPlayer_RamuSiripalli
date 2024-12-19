@@ -10,7 +10,7 @@ const Topbar = () => {
 	const { isAdmin } = useAuthStore();
 	console.log({ isAdmin });
 	return (
-		<div className='flex items-center justify-between p-4 sticky top-0 bg-red-900/40 backdrop-blur-md z-10'>
+		<div className='flex items-center justify-between p-4 sticky top-0 bg-purple-700/40 backdrop-blur-md z-10'>
 			<div className='flex gap-2 items-center'>
 				<img src='/music.png' className='size-8' alt='Spotify logo' />
 				  Ram DJ Music
