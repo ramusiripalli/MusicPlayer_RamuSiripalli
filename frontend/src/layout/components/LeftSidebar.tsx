@@ -18,31 +18,24 @@ fetchAlbums();
 console.log({albums});
   return (
     <div className="h-full flex flex-col gap-2">        
-      <div className="rounded-lg bg-pink-700 p-4">
+      <div className="rounded-lg bg-pink-700/80 p-4">
             <div className="space-y-2 ">
                 <Link to={'/'} className={cn(buttonVariants({
                     variant:"ghost", className:"w-full justify-start text-white hover:bg-pink-800"
                 }))}>
                 <HomeIcon className="mr-2 size-5" /><span className="hidden md:inline">Home</span>
                 </Link>
-                <SignedIn>
-                <Link to={'/chat'} className={cn(buttonVariants({
-                    variant:"ghost", className:"w-full justify-start text-white hover:bg-pink-800"
-                }))}>
-                <MessageCircle className="mr-2 size-5" /><span className="hidden md:inline">Messages</span>
-                </Link>
-                </SignedIn>
             </div>
         </div>
       
-        <div className="flex-1 rounded-lg bg-zinc-900 p-4">
+        <div className="flex-1 rounded-lg bg-zinc-900 p-4 border-[3px] border-pink-700/70">
             <div className="flex items-center justify-between mb-4"> 
-                <div className="flex items-center text-white px-2">
+                <div className="flex items-center text-green-300/90 px-2">
                     <Library className="mr-2 size-5" />
                     <span className="hidden md:inline">Playlists</span>
                 </div>
             </div>
-            <ScrollArea className="h-[calc(100vh-100px)]">
+            <ScrollArea className="h-[calc(100vh-290px)]">
                 <div className="space-y-2">
                     {isLoading ? (
                         <PlaylistSkeleton />

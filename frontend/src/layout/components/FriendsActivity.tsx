@@ -14,8 +14,8 @@ const FriendsActivity = () => {
 	}, [fetchUsers, user]);
 
 	return (
-		<div className='h-full bg-zinc-900 rounded-lg flex flex-col'>
-			<div className='p-4 flex justify-between items-center border-b border-zinc-800 bg-pink-700'>
+		<div className='h-full bg-zinc-900 rounded-lg flex flex-col border-[3px] border-pink-700/70'>
+			<div className='p-4 flex justify-between items-center bg-pink-700/70 rounded-md'>
 				<div className='flex items-center gap-2'>
 					<Users className='size-5 shrink-0' />
 					<h2 className='font-semibold'>What your friends are listening to</h2>
