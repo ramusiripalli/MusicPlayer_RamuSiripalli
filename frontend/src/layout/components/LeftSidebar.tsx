@@ -1,9 +1,8 @@
-import PlaylistSkeleton from "@/components/skeletons/PlaylistSkeleton";
+import PlaylistSkeleton from "@/components/skeletons/PlaylistSkeleton.tsx";
 import { buttonVariants } from "@/components/ui/button"
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { cn } from "@/lib/utils"
-import { SignedIn } from "@clerk/clerk-react"
-import { HomeIcon, Library, MessageCircle } from "lucide-react"
+import { HomeIcon, Library } from "lucide-react"
 import { Link } from "react-router-dom";
 import { useMusicStore  } from "@/stores/useMusicStore.ts";
 import { useEffect } from "react";

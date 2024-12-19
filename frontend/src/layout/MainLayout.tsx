@@ -1,7 +1,7 @@
 import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from "@/components/ui/resizable";
 import { Outlet } from "react-router-dom";
-import LeftSidebar from "./components/LeftSidebar";
-import FriendsActivity from "./components/FriendsActivity";
+import LeftSidebar from "./components/LeftSidebar.tsx";
+import FriendsActivity from "./components/FriendsActivity.tsx";
 import AudioPlayer from "./components/AudioPlayer.tsx";
 import { PlaybackControls } from "./components/PlaybackControls.tsx";
 import { useEffect, useState } from "react";
