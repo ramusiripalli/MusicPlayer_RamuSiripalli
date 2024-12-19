@@ -1,31 +1,22 @@
 import { Button } from "@/components/ui/button";
-import { Slider } from "@/components/ui/slider";
-import { usePlayerStore } from "@/stores/usePlayerStore";
-import { Laptop2, ListMusic, Mic2, Pause, Play, Repeat, Shuffle, SkipBack, SkipForward, Volume1 } from "lucide-react";
+import { usePlayerStore } from "@/stores/usePlayerStore.ts";
+import {  Pause, Play,  SkipBack, SkipForward } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-
-const formatTime = (seconds: number) => {
-	const minutes = Math.floor(seconds / 60);
-	const remainingSeconds = Math.floor(seconds % 60);
-	return `${minutes}:${remainingSeconds.toString().padStart(2, "0")}`;
-};
 
 export const PlaybackControls = () => {
 	const { currentSong, isPlaying, togglePlay, playNext, playPrevious } = usePlayerStore();
-
-	const [volume, setVolume] = useState(75);
 	const [currentTime, setCurrentTime] = useState(0);
 	const [duration, setDuration] = useState(0);
 	const audioRef = useRef<HTMLAudioElement | null>(null);
 
 	useEffect(() => {
 		audioRef.current = document.querySelector("audio");
-
 		const audio = audioRef.current;
 		if (!audio) return;
-
 		const updateTime = () => setCurrentTime(audio.currentTime);
 		const updateDuration = () => setDuration(audio.duration);
+		console.log(currentTime);
+		console.log(duration);
 
 		audio.addEventListener("timeupdate", updateTime);
 		audio.addEventListener("loadedmetadata", updateDuration);
@@ -42,13 +33,6 @@ export const PlaybackControls = () => {
 			audio.removeEventListener("ended", handleEnded);
 		};
 	}, [currentSong]);
-
-	const handleSeek = (value: number[]) => {
-		if (audioRef.current) {
-			audioRef.current.currentTime = value[0];
-		}
-	};
-
 	return (
 		<footer className='h-20 sm:h-24 bg-zinc-900 border-t border-[3px] border-pink-700/70 px-4'>
 			<div className='flex items-center h-full max-w-[1800px] mx-auto'>
@@ -86,7 +70,6 @@ export const PlaybackControls = () => {
 						>
 							<SkipBack className='h-[50px] w-[50px]' />
 						</Button>
-
 						<Button
 							size='icon'
 							className='bg-white hover:bg-white/80 text-black rounded-full h-8 w-8'
