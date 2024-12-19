@@ -40,9 +40,17 @@ const seedDatabase = async () => {
 				duration: 196, // 0:36
 			},
 			{
+				title: "Peelings",
+				artist: " Laxmi Dasa",
+				imageUrl: "/cover-images/6.jpg",
+				audioUrl: "/songs/6.mp3",
+				plays: Math.floor(Math.random() * 5000),
+				duration: 196, // 0:36
+			},
+			{
 				title: "chutumalle Song",
 				artist: "Cyber Pulse",
-				imageUrl: "/cover-images/13.jpg",
+				imageUrl: "/cover-images/13.jpeg",
 				audioUrl: "/songs/13.mp3",
 				plays: Math.floor(Math.random() * 5000),
 				duration: 39, // 0:39
@@ -88,12 +96,12 @@ const seedDatabase = async () => {
 				duration: 221, // 0:30
 			},
 			{
-				title: "Stay With Me",
-				artist: "Sarah Mitchell",
+				title: "Okade okadu",
+				artist: "Muthu",
 				imageUrl: "/cover-images/1.jpg",
 				audioUrl: "/songs/1.mp3",
 				plays: Math.floor(Math.random() * 5000),
-				duration: 46, // 0:46
+				duration: 379, // 0:46
 			},
 			{
 				title: "Endi Kondalu Eletoda",
@@ -104,12 +112,12 @@ const seedDatabase = async () => {
 				duration: 296, // 0:41
 			},
 			{
-				title: "Moonlight Dance",
-				artist: "Silver Shadows",
+				title: "Sooseki pushpa 2",
+				artist: "Shreya Ghosal",
 				imageUrl: "/cover-images/14.jpg",
 				audioUrl: "/songs/14.mp3",
 				plays: Math.floor(Math.random() * 5000),
-				duration: 27, // 0:27
+				duration: 260, // 0:27
 			},
 			{
 				title: "Pushpa Pushpa",
@@ -128,12 +136,12 @@ const seedDatabase = async () => {
 				duration: 39, // 0:39
 			},
 			{
-				title: "Purple Sunset",
-				artist: "Dream Valley",
-				imageUrl: "/cover-images/12.jpg",
+				title: "Gango Renuku Thalli",
+				artist: "Mahalingam",
+				imageUrl: "/cover-images/12.jpeg",
 				audioUrl: "/songs/12.mp3",
 				plays: Math.floor(Math.random() * 5000),
-				duration: 17, // 0:17
+				duration: 205, // 0:17
 			},
 		]);
 
@@ -161,7 +169,7 @@ const seedDatabase = async () => {
 				songs: createdSongs.slice(8, 11).map((song) => song._id),
 			},
 			{
-				title: "Eastern Dreams",
+				title: "Beats 2024",
 				artist: "Various Artists",
 				imageUrl: "/albums/4.jpg",
 				releaseYear: 2024,
