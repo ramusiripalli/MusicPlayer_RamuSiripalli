@@ -72,12 +72,20 @@ const seedDatabase = async () => {
 				duration: 190, // 0:39
 			},
 			{
-				title: "Starlight",
-				artist: "Luna Bay",
+				title: "Dhruva Dhurva",
+				artist: "Amit Mishra",
 				imageUrl: "/cover-images/10.jpg",
 				audioUrl: "/songs/10.mp3",
 				plays: Math.floor(Math.random() * 5000),
-				duration: 30, // 0:30
+				duration: 207, // 0:30
+			},
+			{
+				title: "Survival Vivekam",
+				artist: "Anirudh Ravichandran",
+				imageUrl: "/cover-images/8.jpeg",
+				audioUrl: "/songs/8.mp3",
+				plays: Math.floor(Math.random() * 5000),
+				duration: 221, // 0:30
 			},
 			{
 				title: "Stay With Me",
@@ -88,12 +96,12 @@ const seedDatabase = async () => {
 				duration: 46, // 0:46
 			},
 			{
-				title: "Midnight Drive",
-				artist: "The Wanderers",
+				title: "Endi Kondalu Eletoda",
+				artist: "Mangali",
 				imageUrl: "/cover-images/2.jpg",
 				audioUrl: "/songs/2.mp3",
 				plays: Math.floor(Math.random() * 5000),
-				duration: 41, // 0:41
+				duration: 296, // 0:41
 			},
 			{
 				title: "Moonlight Dance",
@@ -132,22 +140,22 @@ const seedDatabase = async () => {
 		// Create albums with references to song IDs
 		const albums = [
 			{
-				title: "Urban Nights",
-				artist: "Various Artists",
+				title: "Bhakti Songs",
+				artist: "Mangali",
 				imageUrl: "/albums/1.jpg",
 				releaseYear: 2024,
 				songs: createdSongs.slice(0, 4).map((song) => song._id),
 			},
 			{
-				title: "Coastal Dreaming",
+				title: "Love Songs Telugu",
 				artist: "Various Artists",
 				imageUrl: "/albums/2.jpg",
 				releaseYear: 2024,
 				songs: createdSongs.slice(4, 8).map((song) => song._id),
 			},
 			{
-				title: "Midnight Sessions",
-				artist: "Various Artists",
+				title: "Gym Telugu Beat",
+				artist: "Telugu Artists",
 				imageUrl: "/albums/3.jpg",
 				releaseYear: 2024,
 				songs: createdSongs.slice(8, 11).map((song) => song._id),
